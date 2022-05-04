@@ -1,1 +1,1 @@
-Project requirements: https://hyperskill.org/projects/113?track=17
+Project requirements: https://hyperskill.org/projects/133?track=17
