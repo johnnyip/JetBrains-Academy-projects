@@ -1,5 +1,7 @@
 Project requirements: https://hyperskill.org/projects/133?track=17
 
+Project demonstration in online IDE: https://onlinegdb.com/tQNJy9Pmj8
+
 Sample input (> ) and output
 
 ```
