@@ -1,6 +1,6 @@
 Project requirements: https://hyperskill.org/projects/113?track=17
 
-Project demonstration in online IDE: https://onlinegdb.com/lsqGYsvJU
+Project demonstration in online compiler: https://onlinegdb.com/lsqGYsvJU
 
 Sample input (> ) and output
 
