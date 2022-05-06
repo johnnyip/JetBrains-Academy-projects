@@ -1,106 +1,98 @@
-Project requirements: https://hyperskill.org/projects/133?track=17
+Project requirements: https://hyperskill.org/projects/33?track=17
 
-Project demonstration in online compiler: https://onlinegdb.com/tQNJy9Pmj8
+Project demonstration in online compiler: https://onlinegdb.com/PLSNJIq56A
 
 Sample input (> ) and output
 
 ```
-Enter the number of rows:
-> 6
-Enter the number of seats in each row:
-> 6
+Write action (buy, fill, take, remaining, exit): 
+> remaining
 
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 3
+The coffee machine has:
+400 ml of water
+540 ml of milk
+120 g of coffee beans
+9 disposable cups
+$550 of money
 
-Number of purchased tickets: 0
-Percentage: 0.00%
-Current income: $0
-Total income: $360
+Write action (buy, fill, take, remaining, exit): 
+> buy
 
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
 > 2
+I have enough resources, making you a coffee!
 
-Enter a row number:
-> 1
-Enter a seat number in that row:
-> 1
+Write action (buy, fill, take, remaining, exit): 
+> remaining
 
-Ticket price: $10
+The coffee machine has:
+50 ml of water
+465 ml of milk
+100 g of coffee beans
+8 disposable cups
+$557 of money
 
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 3
+Write action (buy, fill, take, remaining, exit): 
+> buy
 
-Number of purchased tickets: 1
-Percentage: 2.78%
-Current income: $10
-Total income: $360
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
 > 2
+Sorry, not enough water!
 
-Enter a row number:
-> 1
-Enter a seat number in that row:
-> 1
+Write action (buy, fill, take, remaining, exit): 
+> fill
 
-That ticket has already been purchased!
-
-Enter a row number:
-> 10
-Enter a seat number in that row:
-> 20
-
-Wrong input!
-
-Enter a row number:
-> 4
-Enter a seat number in that row:
-> 4
-
-Ticket price: $10
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 1
-
-Cinema:
-  1 2 3 4 5 6
-1 B S S S S S
-2 S S S S S S
-3 S S S S S S
-4 S S S B S S
-5 S S S S S S
-6 S S S S S S
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 3
-
-Number of purchased tickets: 2
-Percentage: 5.56%
-Current income: $20
-Total income: $360
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
+Write how many ml of water you want to add: 
+> 1000
+Write how many ml of milk you want to add: 
 > 0
+Write how many grams of coffee beans you want to add: 
+> 0
+Write how many disposable cups of coffee you want to add: 
+> 0
+
+Write action (buy, fill, take, remaining, exit): 
+> remaining
+
+The coffee machine has:
+1050 ml of water
+465 ml of milk
+100 g of coffee beans
+8 disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit): 
+> buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
+> 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): 
+> remaining
+
+The coffee machine has:
+700 ml of water
+390 ml of milk
+80 g of coffee beans
+7 disposable cups
+$564 of money
+
+Write action (buy, fill, take, remaining, exit): 
+> take
+
+I gave you $564
+
+Write action (buy, fill, take, remaining, exit): 
+> remaining
+
+The coffee machine has:
+700 ml of water
+390 ml of milk
+80 g of coffee beans
+7 disposable cups
+$0 of money
+
+Write action (buy, fill, take, remaining, exit): 
+> exit
 ```
