@@ -1,8 +1,5 @@
 package numbers;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 public enum Properties {
     EVEN,
     ODD,

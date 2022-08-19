@@ -1,12 +1,10 @@
 package numbers;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.ScheduledExecutorService;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -112,11 +110,11 @@ public class Main {
 
                 } else if (notValid.size() == 1) {
                     System.out.println("The property " + notValid.toString() + " is wrong.\n" +
-                            "Available properties: " + Arrays.stream(Properties.values()).map(item -> item.name()).toList());
+                            "Available properties: " + Arrays.stream(Properties.values()).map(item -> item.name()).collect(Collectors.toList())  );
 
                 } else if (notValid.size() > 1) {
                     System.out.println("The properties " + notValid.toString() + " are wrong.\n" +
-                            "Available properties: " + Arrays.stream(Properties.values()).map(item -> item.name()).toList());
+                            "Available properties: " + Arrays.stream(Properties.values()).map(item -> item.name()).collect(Collectors.toList())  );
 
                 } else if (mutuallyExclusive.size() > 0) {
                     System.out.println("The request contains mutually exclusive properties: " + mutuallyExclusive.toString() + "\n" +
@@ -155,7 +153,7 @@ public class Main {
                             }
                         }
 
-                        currentProps.retainAll(props.stream().map(item -> item.toLowerCase()).toList());
+                        currentProps.retainAll(props.stream().map(item -> item.toLowerCase()).collect(Collectors.toList()));
 
 //                        System.out.println("shouldExclude: "+shouldExcluded);
                         if ((props.size() == 0 || currentProps.size() == props.size()) && !shouldExcluded) {
