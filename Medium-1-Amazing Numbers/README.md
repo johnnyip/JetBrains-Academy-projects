@@ -1,98 +1,71 @@
-Project requirements: https://hyperskill.org/projects/33?track=17
+Project requirements: https://hyperskill.org/projects/184?&track=17
 
-Project demonstration in online compiler: https://onlinegdb.com/PLSNJIq56A
+Project demonstration in online compiler: https://onlinegdb.com/afcsOrXBa
 
 Sample input (> ) and output
 
 ```
-Write action (buy, fill, take, remaining, exit): 
-> remaining
+Welcome to Amazing Numbers!
 
-The coffee machine has:
-400 ml of water
-540 ml of milk
-120 g of coffee beans
-9 disposable cups
-$550 of money
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameter shows how many consecutive numbers are to be processed;
+- two natural numbers and properties to search for;
+- a property preceded by minus must not be present in numbers;
+- separate the parameters with one space;
+- enter 0 to exit.
 
-Write action (buy, fill, take, remaining, exit): 
-> buy
+Enter a request: 1 10
 
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
-> 2
-I have enough resources, making you a coffee!
+               1 is odd, palindromic, spy, square, jumping, happy
+               2 is even, palindromic, spy, jumping, sad
+               3 is odd, palindromic, spy, sunny, jumping, sad
+               4 is even, palindromic, spy, square, jumping, sad
+               5 is odd, palindromic, spy, jumping, sad
+               6 is even, palindromic, spy, jumping, sad
+               7 is odd, buzz, palindromic, spy, jumping, happy
+               8 is even, palindromic, spy, sunny, jumping, sad
+               9 is odd, palindromic, spy, square, jumping, sad
+              10 is even, duck, jumping, happy
 
-Write action (buy, fill, take, remaining, exit): 
-> remaining
+Enter a request: 1 5 -odd
 
-The coffee machine has:
-50 ml of water
-465 ml of milk
-100 g of coffee beans
-8 disposable cups
-$557 of money
+               2 is even, palindromic, spy, jumping, sad
+               4 is even, palindromic, spy, square, jumping, sad
+               6 is even, palindromic, spy, jumping, sad
+               8 is even, palindromic, spy, sunny, jumping, sad
+              10 is even, duck, jumping, happy
 
-Write action (buy, fill, take, remaining, exit): 
-> buy
+Enter a request: 1 5 -even
 
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
-> 2
-Sorry, not enough water!
+               1 is odd, palindromic, spy, square, jumping, happy
+               3 is odd, palindromic, spy, sunny, jumping, sad
+               5 is odd, palindromic, spy, jumping, sad
+               7 is odd, buzz, palindromic, spy, jumping, happy
+               9 is odd, palindromic, spy, square, jumping, sad
 
-Write action (buy, fill, take, remaining, exit): 
-> fill
+Enter a request: 1 5 -odd -even gapful
 
-Write how many ml of water you want to add: 
-> 1000
-Write how many ml of milk you want to add: 
-> 0
-Write how many grams of coffee beans you want to add: 
-> 0
-Write how many disposable cups of coffee you want to add: 
-> 0
+The request contains mutually exclusive properties: [-ODD, -EVEN]
+There are no numbers with these properties.
 
-Write action (buy, fill, take, remaining, exit): 
-> remaining
+Enter a request: 1 5 odd square -odd
 
-The coffee machine has:
-1050 ml of water
-465 ml of milk
-100 g of coffee beans
-8 disposable cups
-$557 of money
+The request contains mutually exclusive properties: [-ODD, ODD]
+There are no numbers with these properties.
 
-Write action (buy, fill, take, remaining, exit): 
-> buy
+Enter a request: 1 5 sunny square
 
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: 
-> 2
-I have enough resources, making you a coffee!
+The request contains mutually exclusive properties: [SQUARE, SUNNY]
+There are no numbers with these properties.
 
-Write action (buy, fill, take, remaining, exit): 
-> remaining
+Enter a request: 1 5 -sunny -square
 
-The coffee machine has:
-700 ml of water
-390 ml of milk
-80 g of coffee beans
-7 disposable cups
-$564 of money
-
-Write action (buy, fill, take, remaining, exit): 
-> take
-
-I gave you $564
-
-Write action (buy, fill, take, remaining, exit): 
-> remaining
-
-The coffee machine has:
-700 ml of water
-390 ml of milk
-80 g of coffee beans
-7 disposable cups
-$0 of money
-
-Write action (buy, fill, take, remaining, exit): 
-> exit
+               2 is even, palindromic, spy, jumping, sad
+               5 is odd, palindromic, spy, jumping, sad
+               6 is even, palindromic, spy, jumping, sad
+               7 is odd, buzz, palindromic, spy, jumping, happy
+              10 is even, duck, jumping, happy
 ```
